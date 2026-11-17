@@ -1,0 +1,9 @@
+# Nerfstudio environment (separate from the main uv project env).
+# Python 3.10 is required: gsplat only publishes prebuilt Windows wheels for cp310.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.4.1+cu124
+torchvision==0.19.1+cu124
+gsplat @ https://github.com/nerfstudio-project/gsplat/releases/download/v1.4.0/gsplat-1.4.0%2Bpt24cu124-cp310-cp310-win_amd64.whl
+nerfstudio==1.1.5
+# fpsample>=1.0 has no Windows wheel and needs a C++ toolchain; 0.3.3 ships cp310 win_amd64.
+fpsample==0.3.3

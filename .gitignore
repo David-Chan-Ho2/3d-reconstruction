@@ -1,0 +1,13 @@
+/colmap/
+/data/
+/results/
+/output/
+
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+.DS_Store
+Thumbs.db
+/envs/
